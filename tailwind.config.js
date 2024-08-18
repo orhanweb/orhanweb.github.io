@@ -4,41 +4,26 @@ export default {
     './index.html', // HTML file in the root directory of the project
     './src/**/*.{js,ts,jsx,tsx}', // All JavaScript, TypeScript and JSX/TSX files in the src directory
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        // - PRİMARY - Purple Color Palette
-        purple: {
-          lightest: '#EAE2F8', // Moon Raker
-          lighter: '#C4B5FD', // Melrose
-          light: '#A78BFA', // Heliotrope
-          DEFAULT: '#7C3AED', // Electric Violet
-          dark: '#6D28D9', // Purple Heart
-          darker: '#5B21B6', // Purple Heart Dark
-          darkest: '#4C1D95', // Daisy Bush
+        // - PRİMARY - Green-Blue Color Palette
+        greenBlue: {
+          teal: '#008080',
+          darkCyan: '#0E4D4D',
+          deepTeal: '#014D4E',
+          midnightGreen: '#004953',
+          oceanBlue: '#003F5C',
+          brightCyan: '#00FFFF',
         },
 
-        // Blue Color Palette
-        blue: {
-          lightest: '#E0F2FE', // Pattens Blue
-          lighter: '#BAE6FD', // French Pass
-          light: '#7DD3FC', // Malibu
-          DEFAULT: '#38BDF8', // Picton Blue
-          dark: '#0EA5E9', // Cerulean
-          darker: '#0284C7', // Lochmara
-          darkest: '#0369A1', // Bahama Blue
-        },
-
-        // Pink Color Palette
-        pink: {
-          lightest: '#FCE7F3', // Wisp Pink
-          lighter: '#FBCFE8', // Classic Rose
-          light: '#F9A8D4', // Lavender Pink
-          DEFAULT: '#F472B6', // Persian Pink
-          dark: '#EC4899', // French Rose
-          darker: '#DB2777', // Cerise
-          darkest: '#BE185D', // Maroon Flush
+        // Green Color Palette
+        green: {
+          emerald: '#2F4F4F',
+          darkOlive: '#556B2F',
+          forest: '#228B22',
+          pine: '#01796F',
+          deepSea: '#0D3B2E',
         },
 
         // White Color Palette

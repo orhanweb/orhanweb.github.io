@@ -1,5 +1,12 @@
-function App() {
-  return <div className="text-pink-darkest">Hello World</div>;
-}
+//src/App.tsx
+import MainPage from './pages/MainPage';
+
+const App = () => {
+  return (
+    <div className="App">
+      <MainPage />
+    </div>
+  );
+};
 
 export default App;
