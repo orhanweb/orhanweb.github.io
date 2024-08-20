@@ -9,10 +9,12 @@ const MainPage = () => {
   return (
     <div className="bg-black text-white">
       <Navbar />
-      <Home />
-      <Projects />
-      <About />
-      <Contact />
+      <main>
+        <Home />
+        <Projects />
+        <About />
+        <Contact />
+      </main>
     </div>
   );
 };
