@@ -7,7 +7,7 @@ import Contact from './Contact';
 
 const MainPage = () => {
   return (
-    <div className="bg-black text-white">
+    <div id="main" className="bg-black text-white">
       <Navbar />
       <main>
         <Home />
