@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+public/cv_en.pdf
+public/cv_tr.pdf

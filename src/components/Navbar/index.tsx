@@ -6,6 +6,23 @@ import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa6';
 import { AnimatePresence, motion } from 'framer-motion';
 
+const blurEffect = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.2 },
+  },
+  exit: { opacity: 0, transition: { duration: 0.4 } },
+};
+
+const ulNavLinkEffect = {
+  visible: { transition: { staggerChildren: 0.1, delayChildren: 0.2 } },
+};
+const liNavLinkEffect = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
+
 // Type defination for LinkItem
 interface LinkItem {
   id: string;
@@ -50,7 +67,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="fixed flex px-2 w-full justify-between items-center  left-1/2 -translate-x-1/2 bg-gradient-to-t from-greenBlue-oceanBlue/30  to-greenBlue-midnightGreen/80 from-20% to-100%
+        className="fixed flex px-2 w-full justify-between items-center left-1/2 -translate-x-1/2 bg-gradient-to-t from-greenBlue-oceanBlue/30 to-greenBlue-midnightGreen/80 from-20% to-100%
       shadow-lg z-50 lg:mt-2 lg:w-3/4 lg:max-w-[1000px] lg:rounded-full backdrop-blur-md lg:hover:shadow-2xl lg:hover:scale-[102%]
       transition-all duration-300"
       >
@@ -95,29 +112,18 @@ const Navbar = () => {
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.1 }}
+              variants={blurEffect}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
               className="fixed inset-0 flex flex-col items-center justify-center bg-black/50 backdrop-blur-md z-40"
               onClick={toggleMenu}
             >
               {/* Menu options */}
               {isMenuOpen && (
-                <motion.ul
-                  initial="hidden"
-                  animate="visible"
-                  transition={{ staggerChildren: 0.1, delayChildren: 0.2 }}
-                  className="flex flex-col gap-8 text-center"
-                >
+                <motion.ul variants={ulNavLinkEffect} className="flex flex-col gap-8 text-center">
                   {navLinks.map(link => (
-                    <motion.li
-                      key={link.id}
-                      variants={{
-                        hidden: { opacity: 0, y: 50 },
-                        visible: { opacity: 1, y: 0 },
-                      }}
-                    >
+                    <motion.li key={link.id} variants={liNavLinkEffect}>
                       <Link
                         to={link.id}
                         smooth={true}
