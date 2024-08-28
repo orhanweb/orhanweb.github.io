@@ -1,43 +1,37 @@
-'use client';
-import { useEffect } from 'react';
-import { motion, stagger, useAnimate } from 'framer-motion';
+import { motion } from 'framer-motion';
 
-export const TextGenerateEffect = ({ words, filter = true, duration = 0.5 }: { words: string; filter?: boolean; duration?: number }) => {
-  const [scope, animate] = useAnimate();
+const TextGenerateEffect = ({ words, filter = true, duration = 0.5 }: { words: string; filter?: boolean; duration?: number }) => {
   const wordsArray = words.split(' ');
-  useEffect(() => {
-    animate(
-      'span',
-      {
-        opacity: 1,
-        filter: filter ? 'blur(0px)' : 'none',
-      },
-      {
-        duration: duration ? duration : 1,
-        delay: stagger(0.2),
-      },
-    );
-  }, [scope.current]);
 
-  const renderWords = () => {
-    return (
-      <motion.p ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
-            <motion.span
-              key={word + idx}
-              className="opacity-0"
-              style={{
-                filter: filter ? 'blur(10px)' : 'none',
-              }}
-            >
-              {word}{' '}
-            </motion.span>
-          );
-        })}
-      </motion.p>
-    );
+  const childEffect = {
+    hidden: {
+      opacity: 0,
+      filter: filter ? 'blur(10px)' : 'none',
+    },
+    visible: {
+      opacity: 1,
+      filter: filter ? 'blur(0px)' : 'none',
+      transition: {
+        duration: duration,
+        ease: 'easeInOut',
+      },
+    },
   };
 
-  return <div className="font-semibold text-lg text-justify">{renderWords()}</div>;
+  return (
+    <motion.p
+      initial="hidden"
+      animate="visible"
+      className="font-semibold text-lg text-justify"
+      transition={{ staggerChildren: 0.2, delayChildren: 1.2 }}
+    >
+      {wordsArray.map((word, idx) => (
+        <motion.span key={word + idx} variants={childEffect}>
+          {word}{' '}
+        </motion.span>
+      ))}
+    </motion.p>
+  );
 };
+
+export default TextGenerateEffect;
