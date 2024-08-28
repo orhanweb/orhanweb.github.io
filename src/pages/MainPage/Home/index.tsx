@@ -8,8 +8,8 @@ import { motion } from 'framer-motion';
 const parentEffect = {
   visible: {
     transition: {
-      delayChildren: 0.5, // 1 saniye gecikme
-      staggerChildren: 0.4, // Her bir çocuk 0.3 saniye aralıkla animasyona başlar
+      delayChildren: 0.5, // 1 second delay
+      staggerChildren: 0.4, // Each child starts the animation at 0.3 second intervals
     },
   },
 };
@@ -17,14 +17,14 @@ const parentEffect = {
 const childEffect = {
   hidden: {
     opacity: 0,
-    scale: 1.2, // Başlangıçta %120 boyutunda
-    filter: 'blur(10px)', // Başlangıçta bulanık
-    transformOrigin: 'center', // Büyüme ortadan gerçekleşir
+    scale: 1.2, // Initially 120% size
+    filter: 'blur(10px)', // Blurry at first
+    transformOrigin: 'center', // Growth occurs from the middle
   },
   visible: {
     opacity: 1,
-    scale: 1, // Normal boyut
-    filter: 'blur(0px)', // Netleşme
+    scale: 1,
+    filter: 'blur(0px)',
     transition: {
       type: 'tween',
       duration: 1.2,
@@ -43,7 +43,7 @@ const Home = () => {
       id="home"
       className="min-h-screen bg-gradient-to-b pt-20 py-10 from-transparent via-greenBlue-midnightGreen/30 to-transparent flex flex-col justify-center items-center overflow-hidden"
     >
-      {/* Ana içerik bölümü */}
+      {/* Main content section */}
       <motion.div
         variants={parentEffect}
         initial="hidden"
@@ -51,7 +51,7 @@ const Home = () => {
         viewport={{ once: true }}
         className="flex flex-col gap-8 p-4 w-full md:max-w-[600px]"
       >
-        {/* Fotoğraf ve Divider ile Ana Başlık */}
+        {/* Main Header with Photo and Divider */}
         <motion.div id="photo-title" variants={childEffect} className="flex flex-col md:flex-row items-center justify-center gap-4">
           <img src="/me.jpeg" alt="Orhan’s portrait photo" className="w-64 h-64 rounded-full object-cover" />
           <div className="hidden md:block h-48 w-1 rounded-full bg-white"></div>
@@ -61,12 +61,12 @@ const Home = () => {
           </h1>
         </motion.div>
 
-        {/* Kısa Açıklama */}
+        {/* Short Description */}
         <motion.div id="short-description" variants={childEffect}>
           <TextGenerateEffect words={description} />
         </motion.div>
 
-        {/* Yetenekler */}
+        {/* Skills */}
         <motion.div id="skills" variants={childEffect} className="z-[2]">
           <h2 className="text-2xl font-semibold mb-4">What i use?</h2>
           <div className="fade-effect">
