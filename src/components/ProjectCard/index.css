@@ -1,0 +1,28 @@
+/* //src/components/ProjectCard/index.css */
+
+.project-card {
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+/* Hover effect only applies to md and larger screens */
+@media (min-width: 768px) {
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px 5px #00ffff;
+  }
+}
+/* A glossy border is added around cards for mobile screens */
+@media (max-width: 767px) {
+  .project-card {
+    border: 1px solid #1abc9c;
+  }
+}
+
+.link-hover-effect {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.link-hover-effect:hover {
+  transform: translateX(5px);
+  color: #1abc9c;
+}

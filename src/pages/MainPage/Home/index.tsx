@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const parentEffect = {
   visible: {
     transition: {
-      delayChildren: 0.5, // 1 second delay
+      delayChildren: 0.5, // 0.5 second delay
       staggerChildren: 0.4, // Each child starts the animation at 0.3 second intervals
     },
   },
@@ -39,10 +39,7 @@ const Home = () => {
   const technologies: string[] = ['React', 'TypeScript', 'Tailwind', 'Redux', 'React-Router', 'Framer Motion'];
 
   return (
-    <section
-      id="home"
-      className="min-h-screen bg-gradient-to-b pt-20 py-10 from-transparent via-greenBlue-midnightGreen/30 to-transparent flex flex-col justify-center items-center overflow-hidden"
-    >
+    <section id="home" className="min-h-screen bg-gradient-to-b pt-20 py-16 flex flex-col justify-center items-center overflow-hidden">
       {/* Main content section */}
       <motion.div
         variants={parentEffect}
@@ -83,7 +80,7 @@ const Home = () => {
           </div>
         </motion.div>
 
-        <motion.div id="download-button" variants={childEffect} className="flex justify-center">
+        <motion.div id="download-button" variants={childEffect} className="flex justify-center mt-10">
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

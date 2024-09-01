@@ -9,7 +9,7 @@ export default {
       colors: {
         // - PRİMARY - Green-Blue Color Palette
         greenBlue: {
-          teal: '#008080',
+          teal: '#1abc9c',
           darkCyan: '#0E4D4D',
           deepTeal: '#014D4E',
           midnightGreen: '#004953',
@@ -38,7 +38,7 @@ export default {
         black: {
           lightest: '#666666', // Dove Gray
           lighter: '#4D4D4D', // Tundora
-          light: '#2b2b2b', // Mine Shaft
+          light: '#1f1f1f', // Mine Shaft
           DEFAULT: '#000000', // Black
         },
       },
