@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Customize scrollbar only on widescreen devices (tablet and desktop) */
+@media (min-width: 768px) {
+  /* For WebKit-based browsers (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #2c2c2c; /* Background of the scroll area */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888888; /* Scroll bar color */
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #545454;
+  }
+}
+
 /* Poppins Black */
 @font-face {
   font-family: 'Poppins';

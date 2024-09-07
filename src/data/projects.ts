@@ -7,10 +7,10 @@ export const projects: IProject[] = [
     id: 1,
     title: 'React TS Base Project',
     description: `
-          This project is a starter template for building scalable and maintainable applications using React and TypeScript.
-          It includes a variety of built-in features like responsive design, a notification system, lazy loading, custom loaders,
-          a light/dark theme toggle, and error pages, making it an ideal foundation for complex projects.
-        `,
+      This project is a starter template for building scalable and maintainable applications using React and TypeScript.
+      It includes a variety of built-in features like responsive design, a notification system, lazy loading, custom loaders,
+      a light/dark theme toggle, and error pages, making it an ideal foundation for complex projects.
+    `,
     technologies: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'React Router'],
     githubUrl: 'https://github.com/orhanweb/react-ts-base-project',
     liveDemoUrl: 'https://orhanweb.github.io/react-ts-base-project/',
@@ -20,11 +20,11 @@ export const projects: IProject[] = [
     id: 2,
     title: 'My Site',
     description: `
-      This site is a digital inception, showcasing itself as a portfolio that highlights my projects.
-      Developed with modern web technologies, it serves both as a display and a testbed. Built with
-      React and TypeScript, styled with Tailwind CSS, and enhanced with smooth animations via Framer Motion.
+      We are currently in a live inception. I don't even need to explain this project 😄. But let's give a quick summary anyway.
+      This project was developed with modern web technologies and serves as both a display and a testbed.
+      Built with React and TypeScript, styled with Tailwind CSS, and enhanced with smooth animations via Framer Motion.
       It also utilizes React Icons for iconography and React Scroll for smooth in-page navigation.
-      Powered by Vite, the development experience is fast and the performance is top-notch.
+      Powered by Vite, the development experience is fast, and the performance is top-notch.
     `,
     technologies: ['React', 'TypeScript', 'React Scroll', 'Tailwind CSS', 'Framer Motion', 'React Icons', 'Vite'],
     githubUrl: 'https://github.com/orhanweb/react-ts-project-my-website',

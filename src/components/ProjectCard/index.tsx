@@ -22,7 +22,7 @@ const ProjectCard: React.FC<{ project: IProject }> = ({ project }) => {
       <div id="heder-content-card" className="flex flex-col gap-4">
         {project.imageUrl && <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-contain rounded-lg" />}
         <h2 className="text-2xl font-bold">{project.title}</h2>
-        <p className="text-white-darkest max-h-56 overflow-y-auto">
+        <p className="text-white-darkest max-h-56 overflow-y-auto text-sm">
           {showMore ? project.description : truncateDescription(project.description)}
           {project.description.length > 150 && (
             <button

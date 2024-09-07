@@ -9,7 +9,7 @@ const cardVariants = {
     opacity: 0,
     y: 50,
     scale: 0.8,
-    filter: 'blur(15px)',
+    filter: 'blur(15px)'
   },
   visible: {
     opacity: 1,
@@ -19,9 +19,9 @@ const cardVariants = {
     transition: {
       type: 'tween',
       duration: 0.4,
-      ease: 'easeOut',
-    },
-  },
+      ease: 'easeOut'
+    }
+  }
 };
 
 const Projects = () => {
@@ -33,6 +33,7 @@ const Projects = () => {
           {/* Project Cards Here */}
           {projects.map(project => (
             <motion.div
+              key={project.id}
               layout
               variants={cardVariants}
               initial="hidden"
@@ -40,7 +41,7 @@ const Projects = () => {
               viewport={{ once: true, amount: 0.5 }}
               className="mb-8 break-inside-avoid"
             >
-              <ProjectCard key={project.id} project={project} />
+              <ProjectCard project={project} />
             </motion.div>
           ))}
         </div>
