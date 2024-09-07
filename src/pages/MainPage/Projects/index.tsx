@@ -38,7 +38,7 @@ const Projects = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              className="mb-8"
+              className="mb-8 break-inside-avoid"
             >
               <ProjectCard key={project.id} project={project} />
             </motion.div>

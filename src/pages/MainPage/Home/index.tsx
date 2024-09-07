@@ -1,6 +1,5 @@
 //src/pages/MainPage/Home/index.tsx
-
-import Marquee from 'react-marquee-slider';
+import Marquee from 'react-fast-marquee';
 import TextGenerateEffect from '../../../components/TextGenerateEffect';
 import './index.css';
 import { motion } from 'framer-motion';
@@ -9,9 +8,9 @@ const parentEffect = {
   visible: {
     transition: {
       delayChildren: 0.5, // 0.5 second delay
-      staggerChildren: 0.4, // Each child starts the animation at 0.3 second intervals
-    },
-  },
+      staggerChildren: 0.4 // Each child starts the animation at 0.3 second intervals
+    }
+  }
 };
 
 const childEffect = {
@@ -19,7 +18,7 @@ const childEffect = {
     opacity: 0,
     scale: 1.2, // Initially 120% size
     filter: 'blur(10px)', // Blurry at first
-    transformOrigin: 'center', // Growth occurs from the middle
+    transformOrigin: 'center' // Growth occurs from the middle
   },
   visible: {
     opacity: 1,
@@ -28,9 +27,9 @@ const childEffect = {
     transition: {
       type: 'tween',
       duration: 1.2,
-      ease: 'easeInOut',
-    },
-  },
+      ease: 'easeInOut'
+    }
+  }
 };
 
 const Home = () => {
@@ -67,7 +66,7 @@ const Home = () => {
         <motion.div id="skills" variants={childEffect} className="z-[2]">
           <h2 className="text-2xl font-semibold mb-4">What i use?</h2>
           <div className="fade-effect">
-            <Marquee direction="rtl" velocity={10} scatterRandomly={false} resetAfterTries={1} onInit={() => {}} onFinish={() => {}}>
+            <Marquee direction="left" speed={30} pauseOnHover>
               {technologies.map((tech, idx) => (
                 <div
                   key={idx}
