@@ -57,5 +57,25 @@ export const projects: IProject[] = [
       'TypeScript'
     ],
     githubUrl: 'https://github.com/orhanweb/react-ts-project-stock-counting'
+  },
+  {
+    id: 4,
+    title: 'Space Ship Titanic AI Model',
+    description: `
+      This project was a great opportunity for me to deepen my knowledge in machine learning and explore new techniques.
+      I applied these techniques to the Kaggle Titanic dataset with the goal of predicting passenger survival using two different models:
+      a Neural Network and a Support Vector Classifier (SVC).
+
+      Throughout the process, I focused on data preprocessing, which included handling missing values, feature engineering, and scaling.
+      Once the dataset was prepared, I trained and evaluated both models to compare their effectiveness. The Neural Network model
+      challenged me to learn more about deep learning concepts, while the SVC model gave me a chance to refine my understanding
+      of classical machine learning methods.
+
+      Overall, this project allowed me to not only build functional models but also to expand my knowledge in AI and apply new
+      techniques that I hadn't worked with before. It was a rewarding learning experience that highlighted the balance between
+      complexity and simplicity in machine learning models.
+    `,
+    technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Jupyter Notebook', 'Neural Networks', 'SVC'],
+    githubUrl: 'https://github.com/orhanweb/space_ship_titanic_ai_model'
   }
 ];
