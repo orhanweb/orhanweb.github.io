@@ -13,7 +13,7 @@ const ProjectCard: React.FC<{ project: IProject }> = ({ project }) => {
     if (description.length <= 150) {
       return description;
     }
-    return `${description.substring(0, 150)}...`;
+    return `${description.substring(0, 150)}... `;
   };
 
   return (
@@ -29,7 +29,7 @@ const ProjectCard: React.FC<{ project: IProject }> = ({ project }) => {
               onClick={() => {
                 setShowMore(!showMore);
               }}
-              className="text-greenBlue-teal hover:underline ml-1"
+              className="text-greenBlue-teal hover:underline"
             >
               {showMore ? 'Show Less' : 'More'}
             </button>

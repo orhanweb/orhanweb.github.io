@@ -75,7 +75,66 @@ export const projects: IProject[] = [
       techniques that I hadn't worked with before. It was a rewarding learning experience that highlighted the balance between
       complexity and simplicity in machine learning models.
     `,
-    technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Jupyter Notebook', 'Neural Networks', 'SVC'],
+    technologies: ['Python', 'Neural Networks', 'SVC', 'Scikit-learn', 'Pandas', 'NumPy', 'Jupyter Notebook'],
     githubUrl: 'https://github.com/orhanweb/space_ship_titanic_ai_model'
+  },
+  {
+    id: 5,
+    title: 'Titanic Logistic Regression Model',
+    description: `
+    This project was an excellent opportunity to dive deeper into machine learning using the well-known Titanic dataset from Kaggle.
+    I applied a Logistic Regression model to predict the survival chances of passengers based on their features, such as age, gender,
+    and class. The project allowed me to focus on key aspects of data preprocessing, including handling missing values and feature
+    engineering, which were crucial steps in building an effective model.
+
+    Using powerful Python libraries like pandas, NumPy, and Scikit-learn, I was able to efficiently manage data analysis and model training.
+    This project helped me take my theoretical knowledge of machine learning and apply it in a practical scenario. It also gave me
+    valuable insights into model evaluation techniques. Overall, this project was a rewarding learning experience, and it has laid the
+    groundwork for more advanced projects in the future.
+  `,
+    technologies: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Logistic Regression', 'Jupyter Notebook'],
+    githubUrl: 'https://github.com/orhanweb/titanic_logistic_regression_model'
+  },
+  {
+    id: 6,
+    title: 'Template Based Note App',
+    description: `
+    This Flutter project is designed to be more than just a standard note-taking app. It allows users to create or choose
+    from templates, making the note-taking process flexible and efficient. You can easily add videos, photos, voice recordings,
+    or simple text fields to your notes, depending on your needs.
+    One highlight of the app is the ability to select a template, which automatically fills the note area with predefined components,
+    helping users save time. The My Notes section allows users to view and manage their saved notes.
+    I implemented the Bloc/Cubit architecture to ensure a clean and scalable code structure, making the app modular and easy to maintain.
+  `,
+    technologies: [
+      'Flutter',
+      'Dart',
+      'Bloc',
+      'Cubit',
+      'Provider',
+      'Permission Handler',
+      'ML Kit Text Recognition',
+      'Equatable',
+      'Image Picker',
+      'Image Cropper',
+      'Dynamic Color',
+      'Lottie Animations'
+    ],
+    githubUrl: 'https://github.com/orhanweb/template-based_note_app'
+  },
+  {
+    id: 7,
+    title: 'Big Data Multithreading App',
+    description: `
+    This project was part of a school assignment where I built a desktop application using Python to work with large datasets
+    through multithreading. The app allows users to interact with the dataset by analyzing similarities between columns based on
+    a user-defined threshold. Users can input a similarity threshold and see the results listed based on the comparison of data columns.
+
+    Additionally, the application provides insights into the performance of each thread, displaying the number of threads used
+    and the execution time for each thread. This not only demonstrates efficient handling of large data but also showcases the
+    power of multithreading for performance optimization.
+  `,
+    technologies: ['Python', 'Multithreading', 'Data Analysis', 'Desktop Application'],
+    githubUrl: 'https://github.com/orhanweb/python-big-data-multithreading'
   }
 ];

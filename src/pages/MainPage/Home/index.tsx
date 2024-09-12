@@ -3,6 +3,7 @@ import Marquee from 'react-fast-marquee';
 import TextGenerateEffect from '../../../components/TextGenerateEffect';
 import './index.css';
 import { motion } from 'framer-motion';
+import { description, technologies } from '../../../data/homeData';
 
 const parentEffect = {
   visible: {
@@ -33,10 +34,6 @@ const childEffect = {
 };
 
 const Home = () => {
-  const description: string =
-    'Hi! My name is Orhan. I am a passionate React TypeScript developer, specializing in building highly responsive, modern web applications. My focus is on creating seamless user experiences through clean, scalable, and maintainable code.';
-  const technologies: string[] = ['React', 'TypeScript', 'Tailwind', 'Redux', 'React-Router', 'Framer Motion'];
-
   return (
     <section id="home" className="min-h-screen bg-gradient-to-b pt-20 py-16 flex flex-col justify-center items-center overflow-hidden">
       {/* Main content section */}

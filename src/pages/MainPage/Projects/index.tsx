@@ -1,7 +1,7 @@
 //src/pages/MainPage/Projects/index.tsx
 
 import ProjectCard from '../../../components/ProjectCard';
-import { projects } from '../../../data/projects';
+import { projects } from '../../../data/projectsData';
 import { motion } from 'framer-motion';
 
 const cardVariants = {
