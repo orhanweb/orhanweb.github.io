@@ -18,7 +18,7 @@ export const projects: IProject[] = [
   },
   {
     id: 2,
-    title: 'My Site',
+    title: 'My Website',
     description: `
       We are currently in a live inception. I don't even need to explain this project 😄. But let's give a quick summary anyway.
       This project was developed with modern web technologies and serves as both a display and a testbed.
