@@ -35,14 +35,14 @@ const childEffect = {
 
 const Home = () => {
   return (
-    <section id="home" className="min-h-screen bg-gradient-to-b pt-20 py-16 flex flex-col justify-center items-center overflow-hidden">
+    <section id="home" className="min-h-[calc(100vh-80px)] flex flex-col pt-20 justify-start lg:justify-center items-center">
       {/* Main content section */}
       <motion.div
         variants={parentEffect}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="flex flex-col gap-8 p-4 w-full md:max-w-[600px]"
+        className="flex flex-col gap-8 w-full md:max-w-[600px]"
       >
         {/* Main Header with Photo and Divider */}
         <motion.div id="photo-title" variants={childEffect} className="flex flex-col md:flex-row items-center justify-center gap-4">

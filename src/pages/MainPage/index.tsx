@@ -9,11 +9,13 @@ const MainPage = () => {
   return (
     <div id="main" className="bg-black text-white">
       <Navbar />
-      <main>
-        <Home />
-        <Projects />
-        <About />
-        <Contact />
+      <main className="w-full flex justify-center">
+        <div className="w-full max-w-[1000px] px-5 flex flex-col gap-20">
+          <Home />
+          <Projects />
+          <About />
+          <Contact />
+        </div>
       </main>
     </div>
   );

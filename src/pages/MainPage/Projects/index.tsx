@@ -35,27 +35,25 @@ const defaultAnimationProps = {
 
 const Projects = () => {
   return (
-    <section id="projects" className="min-h-screen flex justify-center">
-      <div className="p-5 max-w-[1000px] mb-20">
-        <h1 className="text-5xl font-bold mb-10">My Projects</h1>
+    <section id="projects" className="min-h-[calc(100vh-80px)]">
+      <h1 className="text-4xl md:text-5xl font-bold mb-10">My Projects</h1>
 
-        {/* Project Cards Here */}
-        <div id="project-card-list" className="columns-1 sm:columns-2 lg:columns-3 gap-8 ">
-          {projects.map(project => (
-            <motion.div key={project.id} layout {...defaultAnimationProps} className="mb-8 break-inside-avoid">
-              <ProjectCard project={project} />
-            </motion.div>
-          ))}
-        </div>
-
-        {/* GitHub Button at the End of the List */}
-        <div className="mt-4 flex justify-end">
-          <motion.div {...defaultAnimationProps} className="w-full sm:w-fit">
-            <a href="https://github.com/orhanweb" target="_blank" rel="noopener noreferrer">
-              <FancyButton text="See more my projects" className="w-full sm:w-96" />
-            </a>
+      {/* Project Cards Here */}
+      <div id="project-card-list" className="columns-1 sm:columns-2 lg:columns-3 gap-8 ">
+        {projects.map(project => (
+          <motion.div key={project.id} layout {...defaultAnimationProps} className="mb-8 break-inside-avoid">
+            <ProjectCard project={project} />
           </motion.div>
-        </div>
+        ))}
+      </div>
+
+      {/* GitHub Button at the End of the List */}
+      <div className="mt-4 lg:mt-10 flex justify-end">
+        <motion.div {...defaultAnimationProps} className="w-full sm:w-fit">
+          <a href="https://github.com/orhanweb" target="_blank" rel="noopener noreferrer">
+            <FancyButton text="See more my projects" className="w-full sm:w-96" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );

@@ -10,17 +10,17 @@ const blurEffect = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { duration: 0.2 },
+    transition: { duration: 0.2 }
   },
-  exit: { opacity: 0, transition: { duration: 0.4 } },
+  exit: { opacity: 0, transition: { duration: 0.4 } }
 };
 
 const ulNavLinkEffect = {
-  visible: { transition: { staggerChildren: 0.1, delayChildren: 0.2 } },
+  visible: { transition: { staggerChildren: 0.1, delayChildren: 0.2 } }
 };
 const liNavLinkEffect = {
   hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
+  visible: { opacity: 1, y: 0 }
 };
 
 // Type defination for LinkItem
@@ -35,7 +35,7 @@ const navLinks: LinkItem[] = [
   { id: 'home', label: 'Home', Icon: FaHome },
   { id: 'projects', label: 'Projects', Icon: FaProjectDiagram },
   { id: 'about', label: 'About', Icon: FaInfoCircle },
-  { id: 'contact', label: 'Contact', Icon: FaPhoneAlt },
+  { id: 'contact', label: 'Contact', Icon: FaPhoneAlt }
 ];
 
 const Navbar = () => {
@@ -94,7 +94,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  offset={-78}
+                  offset={-80}
                   className="flex p-3 rounded-full items-center gap-3 hover:bg-green-emerald hover:text-greenBlue-brightCyan transition-all cursor-pointer"
                   activeClass="bg-black/70 text-greenBlue-brightCyan"
                 >
