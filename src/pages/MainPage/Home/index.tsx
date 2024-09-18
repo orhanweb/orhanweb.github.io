@@ -35,7 +35,7 @@ const childEffect = {
 
 const Home = () => {
   return (
-    <section id="home" className="min-h-[calc(100vh-80px)] flex flex-col pt-20 justify-start lg:justify-center items-center">
+    <section id="home" className="min-h-screen flex flex-col py-20 justify-center items-center overflow-hidden">
       {/* Main content section */}
       <motion.div
         variants={parentEffect}

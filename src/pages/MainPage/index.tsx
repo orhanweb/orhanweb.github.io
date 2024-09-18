@@ -10,7 +10,7 @@ const MainPage = () => {
     <div id="main" className="bg-black text-white">
       <Navbar />
       <main className="w-full flex justify-center">
-        <div className="w-full max-w-[1000px] px-5 flex flex-col gap-20">
+        <div className="w-full max-w-[1000px] px-5 flex flex-col">
           <Home />
           <Projects />
           <About />

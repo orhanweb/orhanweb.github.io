@@ -18,7 +18,6 @@ const cardVariants = {
     scale: 1,
     filter: 'blur(0px)',
     transition: {
-      type: 'tween',
       duration: 0.4,
       ease: 'easeOut'
     }
@@ -35,7 +34,7 @@ const defaultAnimationProps = {
 
 const Projects = () => {
   return (
-    <section id="projects" className="min-h-[calc(100vh-80px)]">
+    <section id="projects" className="min-h-[calc(100vh-80px)] pt-10 pb-20">
       <h1 className="text-4xl md:text-5xl font-bold mb-10">My Projects</h1>
 
       {/* Project Cards Here */}
