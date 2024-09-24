@@ -83,7 +83,7 @@ const Home = () => {
             transition={{ type: 'spring', stiffness: 300 }}
             className="button-wrapper"
           >
-            <a href="/cv_tr.pdf" download="Orhan_CV.pdf" className="px-5 py-3 flex justify-center items-center bg-black font-bold z-[2] rounded-lg">
+            <a href="/cv_en.pdf" download="Orhan_CV.pdf" className="px-5 py-3 flex justify-center items-center bg-black font-bold z-[2] rounded-lg">
               Download My CV
             </a>
           </motion.div>
