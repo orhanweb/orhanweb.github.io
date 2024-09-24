@@ -10,15 +10,16 @@ export default tseslint.config({
   ignores: ['dist'],
   languageOptions: {
     ecmaVersion: 2020,
-    globals: globals.browser,
+    globals: globals.browser
   },
   plugins: {
     'react-hooks': reactHooks,
-    'react-refresh': reactRefresh,
+    'react-refresh': reactRefresh
   },
   rules: {
     ...reactHooks.configs.recommended.rules,
     '@typescript-eslint/no-explicit-any': 'off',
-    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
-  },
+    'react-hooks/exhaustive-deps': 'off',
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }]
+  }
 });

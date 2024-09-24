@@ -1,3 +1,5 @@
+//src/data/projectsData.ts
+
 import { IProject } from '../types/projects';
 import baseProject from '../assets/projectImages/react-ts-base-project.png';
 import mySite from '../assets/projectImages/react-ts-my-site.png';

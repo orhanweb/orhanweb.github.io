@@ -15,7 +15,7 @@ const paragraphAnimation = {
 const About = () => {
   return (
     <section id="about" className="min-h-[calc(100vh-80px)] pt-10 pb-20 flex flex-col justify-center">
-      <h1 className="text-4xl md:text-5xl font-bold pb-10">About Me</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mb-10">About Me</h1>
 
       <div className="font-medium md:font-semibold text-gray-300 md:text-lg text-justify space-y-4">
         {aboutMeText.map((paragraph, index) => (
