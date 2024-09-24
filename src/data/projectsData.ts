@@ -30,7 +30,7 @@ export const projects: IProject[] = [
     `,
     technologies: ['React', 'TypeScript', 'React Scroll', 'Tailwind CSS', 'Framer Motion', 'React Icons', 'Vite'],
     githubUrl: 'https://github.com/orhanweb/react-ts-project-my-website',
-    liveDemoUrl: 'https://username.github.io/my-site', // Replace the real url later
+    liveDemoUrl: 'https://orhanweb.github.io/',
     imageUrl: mySite
   },
   {

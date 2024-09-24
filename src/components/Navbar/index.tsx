@@ -1,7 +1,8 @@
 //src/components/Navbar/index.tsx
 import { Link } from 'react-scroll';
 import { IconType } from 'react-icons';
-import { FaHome, FaProjectDiagram, FaInfoCircle, FaPhoneAlt, FaTimes } from 'react-icons/fa';
+import { FaHome, FaPhoneAlt, FaTimes } from 'react-icons/fa';
+import { FaCode, FaUserTie } from 'react-icons/fa6';
 import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa6';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -33,8 +34,8 @@ interface LinkItem {
 // Define navbar links
 const navLinks: LinkItem[] = [
   { id: 'home', label: 'Home', Icon: FaHome },
-  { id: 'projects', label: 'Projects', Icon: FaProjectDiagram },
-  { id: 'about', label: 'About', Icon: FaInfoCircle },
+  { id: 'projects', label: 'Projects', Icon: FaCode },
+  { id: 'about', label: 'About', Icon: FaUserTie },
   { id: 'contact', label: 'Contact', Icon: FaPhoneAlt }
 ];
 
