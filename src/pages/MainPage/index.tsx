@@ -4,7 +4,8 @@ import Home from './Home';
 import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
-import Footer from './Footer';
+import Footer from '../Footer';
+import ScrollToTop from '../../components/ScrollToUpButton';
 
 const MainPage = () => {
   return (
@@ -19,6 +20,7 @@ const MainPage = () => {
         </div>
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

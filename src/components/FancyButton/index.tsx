@@ -1,3 +1,4 @@
+//src/components/FancyButton/index.tsx
 import React, { ButtonHTMLAttributes } from 'react';
 import './index.css';
 import { twMerge } from 'tailwind-merge';
