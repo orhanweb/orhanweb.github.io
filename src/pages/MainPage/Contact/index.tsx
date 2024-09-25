@@ -126,7 +126,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="min-h-[calc(100vh-78px)] flex flex-col items-center gap-10 justify-center overflow-hidden">
-      <h1 className="w-full text-4xl md:text-5xl font-bold">Get in Touch</h1>
+      <h1 className="w-full text-4xl md:text-5xl font-bold">Let's Connect</h1>
 
       <div id="carousel" className="flex justify-between items-center w-full gap-4">
         {/* Left arrow */}

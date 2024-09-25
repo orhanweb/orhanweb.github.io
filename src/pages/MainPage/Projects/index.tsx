@@ -35,7 +35,7 @@ const defaultAnimationProps = {
 const Projects = () => {
   return (
     <section id="projects" className="min-h-[calc(100vh-80px)] pt-10 pb-20">
-      <h1 className="text-4xl md:text-5xl font-bold mb-10">My Projects</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mb-10">My Projects 👨‍💻</h1>
 
       {/* Project Cards Here */}
       <div id="project-card-list" className="columns-1 sm:columns-2 lg:columns-3 gap-8 ">
