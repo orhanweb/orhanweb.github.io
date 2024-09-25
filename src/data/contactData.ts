@@ -10,5 +10,5 @@ export const icons: ISocialIcon[] = [
   { id: 5, icon: FaXTwitter, title: 'X', url: 'https://x.com/orhanwebb', position: 'offline' },
   { id: 6, icon: FaMedium, title: 'Medium', url: 'https://medium.com/@herorhan999', position: 'offline' },
   { id: 7, icon: FaKaggle, title: 'Kaggle', url: 'https://www.kaggle.com/orhanweb', position: 'offline' },
-  { id: 8, icon: FaEnvelope, title: 'Email', url: 'mailto:herorhan999@gmail.com', position: 'offline' }
+  { id: 8, icon: FaEnvelope, title: 'Email', url: 'mailto:ookahraman21@gmail.com', position: 'offline' }
 ];
