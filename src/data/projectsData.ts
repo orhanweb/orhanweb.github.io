@@ -29,7 +29,7 @@ export const projects: IProject[] = [
       Powered by Vite, the development experience is fast, and the performance is top-notch.
     `,
     technologies: ['React', 'TypeScript', 'React Scroll', 'Tailwind CSS', 'Framer Motion', 'React Icons', 'Vite'],
-    githubUrl: 'https://github.com/orhanweb/react-ts-project-my-website',
+    githubUrl: 'https://github.com/orhanweb/orhanweb.github.io',
     liveDemoUrl: 'https://orhanweb.github.io/',
     imageUrl: mySite
   },
