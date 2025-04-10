@@ -3,20 +3,21 @@
 import { IProject } from '../types/projects';
 import baseProject from '../assets/projectImages/react-ts-base-project.png';
 import mySite from '../assets/projectImages/react-ts-my-site.png';
+import ecommerceCase from '../assets/projectImages/react-ts-e-commerce-case.png';
 
 export const projects: IProject[] = [
   {
     id: 1,
-    title: 'React TS Base Project',
+    title: 'React E-Commerce Case',
     description: `
-      This project is a starter template for building scalable and maintainable applications using React and TypeScript.
-      It includes a variety of built-in features like responsive design, a notification system, lazy loading, custom loaders,
-      a light/dark theme toggle, and error pages, making it an ideal foundation for complex projects.
+      A simple e-commerce app built with React and TypeScript. Users can browse products, filter by category,
+      and add items to their cart. The app uses the context API for cart management and stores data in
+      localStorage to persist the cart even after page reloads.
     `,
-    technologies: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'React Router'],
-    githubUrl: 'https://github.com/orhanweb/react-ts-base-project',
-    liveDemoUrl: 'https://orhanweb.github.io/react-ts-base-project/',
-    imageUrl: baseProject
+    technologies: ['Context Api', 'Shadcn Ui', 'Local Storage', 'React', 'TypeScript', 'Framer Motion', 'Tailwind CSS v4.0'],
+    githubUrl: 'https://github.com/orhanweb/react-ecommerce-case',
+    liveDemoUrl: 'https://orhanweb.github.io/react-ecommerce-case',
+    imageUrl: ecommerceCase
   },
   {
     id: 2,
@@ -35,6 +36,19 @@ export const projects: IProject[] = [
   },
   {
     id: 3,
+    title: 'React TS Base Project',
+    description: `
+      This project is a starter template for building scalable and maintainable applications using React and TypeScript.
+      It includes a variety of built-in features like responsive design, a notification system, lazy loading, custom loaders,
+      a light/dark theme toggle, and error pages, making it an ideal foundation for complex projects.
+    `,
+    technologies: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'React Router'],
+    githubUrl: 'https://github.com/orhanweb/react-ts-base-project',
+    liveDemoUrl: 'https://orhanweb.github.io/react-ts-base-project',
+    imageUrl: baseProject
+  },
+  {
+    id: 4,
     title: 'Inventory Counting System',
     description: `
       This application was developed for a former employer as a comprehensive inventory management solution.
@@ -61,7 +75,7 @@ export const projects: IProject[] = [
     githubUrl: 'https://github.com/orhanweb/react-ts-project-stock-counting'
   },
   {
-    id: 4,
+    id: 5,
     title: 'Space Ship Titanic AI Model',
     description: `
       This project was a great opportunity for me to deepen my knowledge in machine learning and explore new techniques.
@@ -81,7 +95,7 @@ export const projects: IProject[] = [
     githubUrl: 'https://github.com/orhanweb/space_ship_titanic_ai_model'
   },
   {
-    id: 5,
+    id: 6,
     title: 'Titanic Logistic Regression Model',
     description: `
     This project was an excellent opportunity to dive deeper into machine learning using the well-known Titanic dataset from Kaggle.
@@ -98,7 +112,7 @@ export const projects: IProject[] = [
     githubUrl: 'https://github.com/orhanweb/titanic_logistic_regression_model'
   },
   {
-    id: 6,
+    id: 7,
     title: 'Template Based Note App',
     description: `
     This Flutter project is designed to be more than just a standard note-taking app. It allows users to create or choose
@@ -125,7 +139,7 @@ export const projects: IProject[] = [
     githubUrl: 'https://github.com/orhanweb/template-based_note_app'
   },
   {
-    id: 7,
+    id: 8,
     title: 'Big Data Multithreading App',
     description: `
     This project was part of a school assignment where I built a desktop application using Python to work with large datasets
