@@ -74,10 +74,10 @@ const Navbar = () => {
       >
         {/* The left side - Avatar and info */}
         <Link to="home" smooth={true} duration={500} className="flex items-center gap-4 cursor-pointer lg:hover:opacity-50 p-2 transition-all">
-          <img src="/me.jpeg" alt="Orhan's Avatar" className="w-14 h-14 rounded-full object-cover" />
+          <img src="/me.webp" alt="Orhan's Avatar" className="w-14 h-14 rounded-full object-cover" />
           <div className="flex flex-col">
             <span className="font-bold text-lg">Orhan</span>
-            <span className="text-white-darkest text-sm">React TS Dev</span>
+            <span className="text-white-darkest text-sm">Full Stack TS Dev</span>
           </div>
         </Link>
 

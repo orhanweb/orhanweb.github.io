@@ -8,7 +8,7 @@
 
 ## 🎯 About This Project
 
-This is my personal portfolio website where I showcase my skills, projects, and experience as a **React + TypeScript Developer**. The site includes smooth animations, responsive design, and a modern tech stack to ensure a fast and delightful user experience.
+This is my personal portfolio website where I showcase my skills, projects, and experience as a **Full Stack TypeScript Developer**. The site includes smooth animations, responsive design, and a modern tech stack to ensure a fast and delightful user experience.
 
 **Live Demo:** [Check it out here!](https://orhanweb.github.io/) 🚀
 

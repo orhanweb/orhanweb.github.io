@@ -46,10 +46,10 @@ const Home = () => {
       >
         {/* Main Header with Photo and Divider */}
         <motion.div id="photo-title" variants={childEffect} className="flex flex-col md:flex-row items-center justify-center gap-4">
-          <img src="/me.jpeg" alt="Orhan’s portrait photo" className="w-64 h-64 rounded-full object-cover" />
+          <img src="/me.webp" alt="Orhan's portrait photo" className="w-64 h-64 rounded-full object-cover" />
           <div className="hidden md:block h-48 w-1 rounded-full bg-white"></div>
           <h1 className="text-4xl font-bold text-center md:text-start bg-gradient-to-br from-pink-500 via-yellow-500 to-purple-500 bg-clip-text text-transparent">
-            React TS <br />
+            Full Stack TS <br />
             Developer
           </h1>
         </motion.div>
